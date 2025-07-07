@@ -7,4 +7,3 @@
 - Mockito
 - JACOCO Coverage reports
 
-a
