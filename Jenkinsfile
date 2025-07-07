@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git url: 'https://github.com/noghanodedra/spring-boot-rest-api-unit-tests', branch: 'master'
+        git url: 'https://github.com/nerissaarvianaputr/cicd', branch: 'main'
       }
     }
  
@@ -34,7 +34,9 @@ pipeline {
               -Dsonar.projectKey=springboot \
               -Dsonar.projectName='springboot' \
               -Dsonar.host.url=http://sonarqube:9000 \
-              -Dsonar.token=sqp_6311c9dcaed9cf76ecb99862a21d8e735b68d327
+              -Dsonar.token=sqp_809e51eb2cb024eb5d336fc2df5de05e44f0ee65
+
+
         """
       }
     }
